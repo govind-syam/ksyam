@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+  background: #000;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #1a0022cc, #0d001acc);
+  border-radius: 12px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #6c5ce7;
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+input, textarea, button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+}
+
+footer a {
+  color: #f0f0f0;
+  margin: 0 8px;
+  font-size: 1.2rem;
+}
+
+/* Animated Star Background */
+.stars, .twinkling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: -1;
+}
+
+.stars {
+  background: url('https://i.imgur.com/o1c4XUL.png') repeat;
+  animation: moveStars 200s linear infinite;
+}
+
+.twinkling {
+  background: url('https://i.imgur.com/NM3bqAe.png') repeat;
+  animation: moveTwinkling 150s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: -10000px 5000px;}
+}
+
+@keyframes moveTwinkling {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 5000px;}
+}
+
+.zodiac-wheel-container {
+  max-width: 280px;
+  margin: 20px auto;
+  text-align: center;
+}
+.zodiac-wheel-container svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
